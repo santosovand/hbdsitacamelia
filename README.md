@@ -123,6 +123,8 @@
       <img class="slide" src="foto6.jpg" alt="Foto 6" />
     <img class="slide" src="foto1.jpg" alt="Foto 1" /> 
      <img class="slide" src="foto9.jpg" alt="Foto 9" />
+    <img class="slide" src="foto10.jpg" alt="Foto 10" />
+    <img class="slide" src="Foto7.jpg" alt="Foto 7" />
     </div>
   </div>
 
