@@ -1,4 +1,3 @@
-
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -123,11 +122,11 @@
       <img class="slide" src="Foto7.jpg" alt="Foto 7" />
       <img class="slide" src="foto9.jpg" alt="Foto 9" />
       <img class="slide" src="foto10.jpg" alt="Foto 10" />
-    </div>
+</div>
 
-  <footer>
+<footer>
     Dibuat dengan <span class="love">&#10084;</span> oleh Van Danu untuk Sita - 30 Juni 2025
-  </footer>
+</footer>
 
   <!-- Musik Otomatis Alternatif (jika mau auto tanpa tombol) -->
   <!--
@@ -168,6 +167,5 @@
     // Mulai slideshow
     setTimeout(showSlides, 7000);
   </script>
-
 </body>
 </html>
