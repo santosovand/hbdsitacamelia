@@ -115,7 +115,7 @@
 
     <h2 style="text-align:center;">📸 Kenangan Manis Kita</h2>
 <div class="slideshow">
-      <img class="slide active" src="foto1.jpg" alt="Foto 1" />
+      <img class="slide.active" src="foto1.jpg" alt="Foto 1" />
       <img class="slide" src="foto5.jpg" alt="Foto 5" />
       <img class="slide" src="foto6.jpg" alt="Foto 6" />
       <img class="slide" src="foto8.jpg" alt="Foto 8" />
