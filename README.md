@@ -124,7 +124,6 @@
       <img class="slide" src="foto9.jpg" alt="Foto 9" />
       <img class="slide" src="foto10.jpg" alt="Foto 10" />
     </div>
-  </div>
 
   <footer>
     Dibuat dengan <span class="love">&#10084;</span> oleh Van Danu untuk Sita - 30 Juni 2025
