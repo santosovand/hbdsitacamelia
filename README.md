@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Selamat Ulang Tahun Sita</title>
   <style>
-   .slideshow {
+<style>
+.slideshow {
   max-width: 100%;
   height: auto;
   position: relative;
@@ -14,7 +15,7 @@
   border-radius: 12px;
 }
 
-.slide {
+.slideshow .slide {
   position: absolute;
   width: 100%;
   opacity: 0;
@@ -24,9 +25,11 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.slide.active {
+.slideshow .active {
   opacity: 1;
-  z-index: 1;
+  z-index: 2;
+}
+</style>
 }
     body {
       margin: 0;
@@ -119,7 +122,7 @@
     </p>
     <h2 style="text-align:center;">📸 Kenangan Manis Kita</h2>
     <div class="slideshow">
-      <img class="slide" src="foto1.jpg" alt="Foto 1" />
+      <img class="slide active" src="foto1.jpg" alt="Foto 1" />
       <img class="slide" src="foto5.jpg" alt="Foto 5" />
       <img class="slide" src="foto6.jpg" alt="Foto 6" />
       <img class="slide" src="foto8.jpg" alt="Foto 8" />
@@ -153,19 +156,20 @@
 </script>
 <script>
   let slideIndex = 0;
-  const slides = document.getElementsByClassName("slide");
+  const slides = document.querySelectorAll('.slideshow .slide');
 
   function showSlides() {
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].classList.remove("active");
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].classList.add("active");
-    setTimeout(showSlides, 7000); // Ganti tiap 7 detik
+    slides.forEach((slide, index) => {
+      slide.classList.remove("active");
+    });
+
+    slideIndex = (slideIndex + 1) % slides.length;
+    slides[slideIndex].classList.add("active");
+    setTimeout(showSlides, 7000); // 7 detik
   }
 
-  showSlides();
+  slides[0].classList.add("active"); // tampilkan slide pertama saat awal
+  setTimeout(showSlides, 7000);
 </script>
 </body>
 </html>
