@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Selamat Ulang Tahun Sita</title>
   <style>
-    .slideshow {
+   .slideshow {
   max-width: 100%;
   height: auto;
   position: relative;
@@ -15,11 +15,18 @@
 }
 
 .slide {
-  display: none;
+  position: absolute;
   width: 100%;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
 }
     body {
       margin: 0;
@@ -150,12 +157,12 @@
 
   function showSlides() {
     for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      slides[i].classList.remove("active");
     }
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Ganti setiap 3 detik
+    slides[slideIndex - 1].classList.add("active");
+    setTimeout(showSlides, 7000); // Ganti tiap 7 detik
   }
 
   showSlides();
