@@ -42,7 +42,6 @@ body {
 }
 </style>
 <style>
-}
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
