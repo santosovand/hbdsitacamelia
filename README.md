@@ -63,6 +63,26 @@
 </head>
 <body>
   <header>
+    <!-- Tombol Musik --> 
+   <button onclick="document.getElementById('bgm').play()" style="
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-size: 16px;
+  z-index: 9999;
+">🎵 Putar Musik</button>
+
+<!-- Pemutar Musik -->
+<audio id="bgm" loop>
+  <source src="Nadhif_Basalamah_-_bergema_sampai_selamanya__Official_Lyric_Video_(128k).mp3" type="audio/mpeg" />
+  Browser kamu tidak mendukung audio.
+</audio>
     <h1>Selamat Ulang Tahun ke-18 <span class="love">Sita Camelia Azzahra</span> 🎉</h1>
   </header>
   <div class="container">
