@@ -5,12 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Selamat Ulang Tahun Sita</title>
   <style>
-    body 
-     <button onclick="document.getElementById('bgm').play()" style="position:fixed;top:10px;right:10px;padding:10px;background:#ff69b4;color:white;border:none;border-radius:8px;z-index:999;">🎵 Putar Musik</button>
-    <audio id="bgm" loop>
-  <source src="Nadhif_Basalamah_-_bergema_sampai_selamanya__Official_Lyric_Video_(128k).mp3" type="audio/mpeg" />
-  Browser kamu tidak mendukung audio.
-</audio>
+    body
     {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
