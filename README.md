@@ -169,5 +169,20 @@
     showSlides();
   };
 </script>
+<script>
+  window.onload = function () {
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".slideshow .slide");
+
+    function showSlides() {
+      slides.forEach(slide => slide.classList.remove("active"));
+      slides[slideIndex].classList.add("active");
+      slideIndex = (slideIndex + 1) % slides.length;
+      setTimeout(showSlides, 7000);
+    }
+
+    showSlides();
+  };
+</script>
 </body>
 </html>
