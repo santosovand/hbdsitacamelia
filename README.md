@@ -97,9 +97,12 @@
     <h2 style="text-align:center;">📸 Kenangan Manis Kita</h2>
     <div class="gallery">
       <img src="foto1.jpg" alt="Foto 1" />
-      <img src="foto2.jpg" alt="Foto 2" />
       <img src="foto5.jpg" alt="Foto 5" />
       <img src="foto6.jpg" alt="Foto 6" />
+      <img src="foto8.jpg" alt="Foto 8" />
+      <img src="Foto7.jpg" alt="Foto 7" />
+      <img src="foto9.jpg" alt="Foto 9" />
+      <img src="foto10.jpg" alt="Foto 10" />
     </div>
   </div>
   <footer>
