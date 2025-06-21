@@ -38,28 +38,29 @@
     }
 
     .slideshow {
-      position: relative;
-      width: 100%;
-      max-width: 800px;
-      margin: 40px auto;
-      border-radius: 12px;
-      overflow: hidden;
-    }
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
 
-    .slideshow .slide {
-      position: absolute;
-      width: 100%;
-      opacity: 0;
-      transition: opacity 1.5s ease-in-out;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
+.slideshow .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
 
-    .slideshow .slide.active {
-      opacity: 1;
-      z-index: 1;
-    }
+.slideshow .slide.active {
+  opacity: 1;
+  z-index: 1;
+}
 
     @keyframes fall {
       to {
@@ -114,13 +115,13 @@
 
     <h2 style="text-align:center;">📸 Kenangan Manis Kita</h2>
 <div class="slideshow">
-      <img class="slide.active" src="foto1.jpg" alt="Foto 1" />
-      <img class="slide" src="foto5.jpg" alt="Foto 5" />
-      <img class="slide" src="foto6.jpg" alt="Foto 6" />
-      <img class="slide" src="foto8.jpg" alt="Foto 8" />
-      <img class="slide" src="Foto7.jpg" alt="Foto 7" />
-      <img class="slide" src="foto9.jpg" alt="Foto 9" />
-      <img class="slide" src="foto10.jpg" alt="Foto 10" />
+    <img class="slide.active" src="foto1.jpg" alt="Foto 1" />
+    <img class="slide" src="foto5.jpg" alt="Foto 5" />
+    <img class="slide" src="foto6.jpg" alt="Foto 6" />
+    <img class="slide" src="foto8.jpg" alt="Foto 8" />
+    <img class="slide" src="Foto7.jpg" alt="Foto 7" />
+    <img class="slide" src="foto9.jpg" alt="Foto 9" />
+    <img class="slide" src="foto10.jpg" alt="Foto 10" />
 </div>
 
 <footer>
@@ -170,19 +171,23 @@
   };
 </script>
 <script>
-  window.onload = function () {
+  window.addEventListener('load', function () {
     let slideIndex = 0;
-    const slides = document.querySelectorAll(".slideshow .slide");
+    const slides = document.querySelectorAll('.slideshow .slide');
 
     function showSlides() {
-      slides.forEach(slide => slide.classList.remove("active"));
-      slides[slideIndex].classList.add("active");
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+      });
+
+      slides[slideIndex].classList.add('active');
       slideIndex = (slideIndex + 1) % slides.length;
-      setTimeout(showSlides, 7000);
+
+      setTimeout(showSlides, 7000); // Ganti slide tiap 7 detik
     }
 
     showSlides();
-  };
+  });
 </script>
 </body>
 </html>
