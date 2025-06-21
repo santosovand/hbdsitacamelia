@@ -121,7 +121,6 @@
     <img class="slide" src="foto8.jpg" alt="Foto 8" />
     <img class="slide" src="Foto7.jpg" alt="Foto 7" />
     <img class="slide" src="foto9.jpg" alt="Foto 9" />
-    <img class="slide" src="foto10.jpg" alt="Foto 10" />
 </div>
 
 <footer>
