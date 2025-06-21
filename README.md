@@ -5,15 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Selamat Ulang Tahun Sita</title>
 <style>
-.slideshow {
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  margin-top: 30px;
-  overflow: hidden;
-  border-radius: 12px;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #d0e8ff, #f5e1ff, #fff0f5);
+  color: #333;
+  overflow-x: hidden;
 }
 
+/* Slideshow Container */
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Each Slide */
 .slideshow .slide {
   position: absolute;
   width: 100%;
@@ -21,12 +32,13 @@
   transition: opacity 1.5s ease-in-out;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Active Slide */
 .slideshow .active {
   opacity: 1;
-  z-index: 2;
+  z-index: 1;
 }
 </style>
 <style>
@@ -156,20 +168,16 @@
 </script>
 <script>
   let slideIndex = 0;
-  const slides = document.querySelectorAll('.slideshow .slide');
+  const slides = document.querySelectorAll(".slideshow .slide");
 
   function showSlides() {
-    slides.forEach((slide, index) => {
-      slide.classList.remove("active");
-    });
-
+    slides.forEach(slide => slide.classList.remove("active"));
     slideIndex = (slideIndex + 1) % slides.length;
     slides[slideIndex].classList.add("active");
-    setTimeout(showSlides, 7000); // 7 detik
+    setTimeout(showSlides, 7000);
   }
 
-  slides[0].classList.add("active"); // tampilkan slide pertama saat awal
-  setTimeout(showSlides, 7000);
+  setTimeout(showSlides, 7000); // mulai setelah 7 detik
 </script>
 </body>
 </html>
