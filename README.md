@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #d0e8ff, #ffffff);
+      background: linear-gradient(135deg, #d0e8ff, #f5e1ff, #fff0f5);
       color: #333;
       overflow-x: hidden;
     }
