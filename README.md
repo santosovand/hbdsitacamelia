@@ -64,7 +64,7 @@
 <body>
   <header>
     <!-- Tombol Musik --> 
-   <button onclick="document.getElementById('bgm').play()" style="
+    <button onclick="document.getElementById('bgm').play()" style="
   position: fixed;
   top: 10px;
   right: 10px;
