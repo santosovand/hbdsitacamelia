@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Selamat Ulang Tahun Sita</title>
   <style>
+    .slideshow {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -95,14 +111,14 @@
       <strong>Van Danu</strong>
     </p>
     <h2 style="text-align:center;">📸 Kenangan Manis Kita</h2>
-    <div class="gallery">
-      <img src="foto1.jpg" alt="Foto 1" />
-      <img src="foto5.jpg" alt="Foto 5" />
-      <img src="foto6.jpg" alt="Foto 6" />
-      <img src="foto8.jpg" alt="Foto 8" />
-      <img src="Foto7.jpg" alt="Foto 7" />
-      <img src="foto9.jpg" alt="Foto 9" />
-      <img src="foto10.jpg" alt="Foto 10" />
+    <div class="slideshow">
+      <img class="slide" src="foto1.jpg" alt="Foto 1" />
+      <img class="slide" src="foto5.jpg" alt="Foto 5" />
+      <img class="slide" src="foto6.jpg" alt="Foto 6" />
+      <img class="slide" src="foto8.jpg" alt="Foto 8" />
+      <img class="slide" src="Foto7.jpg" alt="Foto 7" />
+      <img class="slide" src="foto9.jpg" alt="Foto 9" />
+      <img class="slide" src="foto10.jpg" alt="Foto 10" />
     </div>
   </div>
   <footer>
@@ -127,6 +143,22 @@
     setTimeout(() => heart.remove(), 5000);
   }
   setInterval(createHeart, 300);
+</script>
+<script>
+  let slideIndex = 0;
+  const slides = document.getElementsByClassName("slide");
+
+  function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Ganti setiap 3 detik
+  }
+
+  showSlides();
 </script>
 </body>
 </html>
