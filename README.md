@@ -151,20 +151,23 @@
     }
     setInterval(createHeart, 300);
   </script>
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slideshow .slide");
 
-  <script>
-    // Slideshow Foto Otomatis
-    let slideIndex = 0;
-    const slides = document.querySelectorAll(".slideshow .slide");
+  function showSlides() {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+    });
 
-    function showSlides() {
-      slides.forEach(slide => slide.classList.remove("active"));
-      slideIndex = (slideIndex + 1) % slides.length;
-      slides[slideIndex].classList.add("active");
-      setTimeout(showSlides, 7000);
-    }
+    slides[slideIndex].classList.add("active");
 
-    // Mulai slideshow
-    setTimeout(showSlides, 7000);
-  </script>
+    slideIndex = (slideIndex + 1) % slides.length;
+    setTimeout(showSlides, 7000); // Ganti tiap 7 detik
+  }
 
+  // Mulai slideshow setelah halaman dimuat
+  window.onload = function () {
+    showSlides();
+  };
+</script>
