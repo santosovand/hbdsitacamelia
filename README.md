@@ -167,5 +167,4 @@
     // Mulai slideshow
     setTimeout(showSlides, 7000);
   </script>
-</body>
-</html>
+
