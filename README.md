@@ -75,7 +75,6 @@
     <div class="gallery">
       <img src="foto1.jpg" alt="Foto 1" />
       <img src="foto2.jpg" alt="Foto 2" />
-      <img src="foto4.jpg" alt="Foto 4" />
       <img src="foto5.jpg" alt="Foto 5" />
       <img src="foto6.jpg" alt="Foto 6" />
     </div>
