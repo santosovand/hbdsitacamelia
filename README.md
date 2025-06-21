@@ -93,7 +93,6 @@
   </style>
 </head>
 <body>
-
   <header>
     <button id="playMusic" onclick="document.getElementById('bgm').play()">🎵 Putar Musik</button>
     <audio id="bgm" loop>
@@ -163,11 +162,12 @@
     slides[slideIndex].classList.add("active");
 
     slideIndex = (slideIndex + 1) % slides.length;
-    setTimeout(showSlides, 7000); // Ganti tiap 7 detik
+    setTimeout(showSlides, 7000); // Ganti setiap 7 detik
   }
 
-  // Mulai slideshow setelah halaman dimuat
   window.onload = function () {
     showSlides();
   };
 </script>
+</body>
+</html>
