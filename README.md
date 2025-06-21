@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Selamat Ulang Tahun Sita</title>
   <style>
-    body
-    {
+    body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to bottom, #d0e8ff, #ffffff);
