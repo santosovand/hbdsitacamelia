@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Selamat Ulang Tahun Sita</title>
   <style>
-    body {
+    body 
+     <button onclick="document.getElementById('bgm').play()" style="position:fixed;top:10px;right:10px;padding:10px;background:#ff69b4;color:white;border:none;border-radius:8px;z-index:999;">🎵 Putar Musik</button>
+    <audio id="bgm" loop>
+  <source src="Nadhif_basalamah" type="audio/mpeg" />
+  Browser kamu tidak mendukung audio.
+</audio>
+    {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to bottom, #d0e8ff, #ffffff);
