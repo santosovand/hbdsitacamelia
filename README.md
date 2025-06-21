@@ -162,7 +162,7 @@
         slides.forEach(slide => slide.classList.remove('active'));
         slides[slideIndex].classList.add('active');
         slideIndex = (slideIndex + 1) % slides.length;
-        setTimeout(showSlides, 4000);
+        setTimeout(showSlides, 3500);
       }
 
       showSlides();
