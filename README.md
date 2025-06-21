@@ -112,7 +112,25 @@
       Semoga segala doamu dikabulkan oleh Allah, terutama harapanmu untuk masuk ke universitas impianmu.<br>
       Di usia 18 ini, semoga kamu menjadi pribadi yang lebih dewasa, kuat, dan penuh semangat dalam menggapai cita-cita.
       Jangan takut bermimpi besar, karena kamu layak mendapatkan yang terbaik.<br><br>
-      Dari aku yang selalu mendoakanmu dengan tulus,<br>
+      Dari aku yang selalu mendoakanmu dengan tulus.
+      Maaf jika selama ini aku sering membuatmu terluka.
+Aku tahu, sikap dan perkataanku kadang tak seperti yang seharusnya — bukan karena aku tak sayang, tapi karena aku terlalu takut kehilanganmu.
+
+Ada kalanya aku merasa tidak disayang, terlalu cepat berprasangka, dan akhirnya bertindak berdasarkan sakit hati yang kupendam sendiri.
+Mungkin aku mencoba membalas, padahal yang aku butuhkan sebenarnya adalah pelukan dan pengertian darimu.
+
+Aku sadar, itu bukan cara yang benar mencintaimu.
+Aku seharusnya melindungi hatimu, bukan justru menyakitinya.
+Aku minta maaf, dari hati yang benar-benar ingin berubah.
+
+Aku ingin memperbaiki semuanya, bukan sekadar meminta maaf lalu mengulanginya lagi.
+Aku ingin jadi seseorang yang lebih dewasa — yang mencintaimu dengan sabar, dengan percaya, dan dengan hati yang tidak mudah goyah.
+
+Terima kasih karena masih bersamaku.
+Maaf untuk luka-luka kecil yang mungkin terasa besar.
+Hari ini, aku hanya ingin kamu tahu:
+Aku sungguh menyayangimu. Dan aku minta maaf.
+<br>
       <strong>Van Danu</strong>
     </p>
 
