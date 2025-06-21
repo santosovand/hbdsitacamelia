@@ -1,9 +1,9 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Selamat Ulang Tahun Sita</title>
-
   <style>
     body {
       margin: 0;
@@ -20,14 +20,39 @@
       text-align: center;
     }
 
+    .love {
+      color: #ff69b4;
+    }
+
     .container {
       padding: 20px;
       max-width: 800px;
       margin: auto;
     }
 
-    .love {
-      color: #ff69b4;
+    .slideshow {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+      margin: 40px auto;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .slideshow .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      z-index: 0;
+    }
+
+    .slideshow .slide.active {
+      opacity: 1;
+      z-index: 1;
     }
 
     footer {
@@ -37,31 +62,7 @@
       color: #555;
     }
 
-    .slideshow {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  height: 400px;
-  margin: 40px auto;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.slideshow .slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  z-index: 0;
-}
-
-.slideshow .slide.active {
-  opacity: 1;
-  z-index: 1;
-}
-
+    /* Hiasan love jatuh */
     @keyframes fall {
       to {
         transform: translateY(100vh) rotate(360deg);
@@ -73,33 +74,14 @@
       position: fixed;
       top: -50px;
       font-size: 24px;
+      color: pink;
       animation: fall linear infinite;
-      z-index: 999;
-    }
-
-    /* Tombol Musik */
-    #playMusic {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      padding: 10px 15px;
-      background: #ff69b4;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      font-size: 16px;
-      z-index: 9999;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <button id="playMusic" onclick="document.getElementById('bgm').play()">🎵 Putar Musik</button>
-    <audio id="bgm" loop>
-      <source src="Nadhif_Basalamah_-_bergema_sampai_selamanya__Official_Lyric_Video_(128k).mp3" type="audio/mpeg" />
-      Browser kamu tidak mendukung audio.
-    </audio>
     <h1>Selamat Ulang Tahun ke-18 <span class="love">Sita Camelia Azzahra</span> 🎉</h1>
   </header>
 
@@ -114,29 +96,27 @@
     </p>
 
     <h2 style="text-align:center;">📸 Kenangan Manis Kita</h2>
-<div class="slideshow">
-    <img class="slide.active" src="foto1.jpg" alt="Foto 1" />
-    <img class="slide" src="foto5.jpg" alt="Foto 5" />
-    <img class="slide" src="foto6.jpg" alt="Foto 6" />
-    <img class="slide" src="foto8.jpg" alt="Foto 8" />
-    <img class="slide" src="Foto7.jpg" alt="Foto 7" />
-    <img class="slide" src="foto9.jpg" alt="Foto 9" />
-</div>
+  <div class="slideshow">
+      <img class="slide active" src="foto1.jpg" alt="Foto 1" />
+      <img class="slide" src="foto5.jpg" alt="Foto 5" />
+      <img class="slide" src="foto6.jpg" alt="Foto 6" />
+    <img class="slide" src="foto8.jpg" alt="Foto 8" /> 
+     <img class="slide" src="foto9.jpg" alt="Foto 9" />
+    </div>
+  </div>
 
-<footer>
+  <footer>
     Dibuat dengan <span class="love">&#10084;</span> oleh Van Danu untuk Sita - 30 Juni 2025
-</footer>
+  </footer>
 
-  <!-- Musik Otomatis Alternatif (jika mau auto tanpa tombol) -->
-  <!--
+  <!-- Musik -->
   <audio autoplay loop hidden>
     <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3db4cc90d7.mp3?filename=romantic-melody-11743.mp3" type="audio/mpeg">
     Browser kamu tidak mendukung pemutar musik.
   </audio>
-  -->
 
+  <!-- Efek love jatuh -->
   <script>
-    // Efek Hati Warna-warni
     function createHeart() {
       const colors = ["#ff4d4d", "#ff66cc", "#ffcc00", "#66ff66", "#66ccff", "#9966ff"];
       const heart = document.createElement("div");
@@ -150,43 +130,23 @@
     }
     setInterval(createHeart, 300);
   </script>
-<script>
-  let slideIndex = 0;
-  const slides = document.querySelectorAll(".slideshow .slide");
 
-  function showSlides() {
-    slides.forEach((slide, i) => {
-      slide.classList.remove("active");
+  <!-- Slideshow JS -->
+  <script>
+    window.addEventListener('load', function () {
+      let slideIndex = 0;
+      const slides = document.querySelectorAll('.slideshow .slide');
+
+      function showSlides() {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[slideIndex].classList.add('active');
+        slideIndex = (slideIndex + 1) % slides.length;
+        setTimeout(showSlides, 7000);
+      }
+
+      showSlides();
     });
+  </script>
 
-    slides[slideIndex].classList.add("active");
-
-    slideIndex = (slideIndex + 1) % slides.length;
-    setTimeout(showSlides, 7000); // Ganti setiap 7 detik
-  }
-
-  window.onload = function () {
-    showSlides();
-  };
-</script>
-<script>
-  window.addEventListener('load', function () {
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.slideshow .slide');
-
-    function showSlides() {
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-      });
-
-      slides[slideIndex].classList.add('active');
-      slideIndex = (slideIndex + 1) % slides.length;
-
-      setTimeout(showSlides, 7000); // Ganti slide tiap 7 detik
-    }
-
-    showSlides();
-  });
-</script>
 </body>
 </html>
