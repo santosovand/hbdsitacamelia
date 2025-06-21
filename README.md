@@ -128,6 +128,5 @@
   }
   setInterval(createHeart, 300);
 </script>
-  </script>
 </body>
 </html>
