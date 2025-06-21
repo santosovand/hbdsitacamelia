@@ -80,6 +80,27 @@
   </style>
 </head>
 <body>
+<!-- Tombol Musik -->
+<button onclick="document.getElementById('bgm').play()" style="
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-size: 16px;
+  z-index: 9999;
+">🎵 Putar Musik</button>
+
+<!-- Musik -->
+<audio id="bgm" autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3db4cc90d7.mp3?filename=romantic-melody-11743.mp3" type="audio/mpeg">
+  Browser kamu tidak mendukung pemutar musik.
+</audio>
+<source src="Nadhif_Basalamah_-_bergema_sampai_selamanya__Official_Lyric_Video_(128k).mp3" type="audio/mpeg">
 
   <header>
     <h1>Selamat Ulang Tahun ke-18 <span class="love">Sita Camelia Azzahra</span> 🎉</h1>
@@ -141,7 +162,7 @@
         slides.forEach(slide => slide.classList.remove('active'));
         slides[slideIndex].classList.add('active');
         slideIndex = (slideIndex + 1) % slides.length;
-        setTimeout(showSlides, 7000);
+        setTimeout(showSlides, 4000);
       }
 
       showSlides();
