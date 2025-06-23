@@ -18,7 +18,7 @@
       color: white;
       padding: 30px 20px;
       text-align: center;
-      max-width: 10000px;       
+      max-width: 8000px;       
       margin: 20px auto;      
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
