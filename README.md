@@ -42,29 +42,32 @@
     }
 
     .slideshow {
-      position: relative;
-      width: 100%;
-      max-width: 800px;
-      height: 400px;
-      margin: 40px auto;
-      border-radius: 12px;
-      overflow: hidden;
-    }
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 4 / 3; /* atau 16 / 9 sesuai bentuk gambar kamu */
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #eee; /* fallback agar gak putih kosong saat loading */
+}
 
- .slideshow .slide {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-      z-index: 0;
-    }
+.slideshow .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
 
-    .slideshow .slide.active {
-      opacity: 1;
-      z-index: 1;
-    }
+.slideshow .slide.active {
+  opacity: 1;
+  z-index: 1;
+}
 
     footer {
       text-align: center;
