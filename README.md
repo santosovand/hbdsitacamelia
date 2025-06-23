@@ -30,9 +30,15 @@
     }
 
     .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+      background: linear-gradient(135deg, #6a9ff8, #a68df5);
+  padding: 25px;
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.1em;
+  animation: fadeInUp 1s ease forwards;
     }
 
     .slideshow {
@@ -66,6 +72,16 @@
       font-size: 0.9em;
       color: #555;
     }
+    @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+     }
+   }
 
     /* Hiasan love jatuh */
     @keyframes fall {
