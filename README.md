@@ -94,13 +94,16 @@
       }
     }
 
-    .heart {
-      position: fixed;
-      top: -50px;
-      font-size: 24px;
-      color: pink;
-      animation: fall linear infinite;
-    }
+  .heart {
+  position: fixed;
+  top: -50px;
+  font-size: 24px;
+  color: pink;
+  animation: fall linear infinite;
+  z-index: 9999;
+  pointer-events: none;
+ }
+    
   </style>
 </head>
 <body>
@@ -182,19 +185,20 @@ Aku sungguh menyayangimu. Dan aku minta maaf.
 
   <!-- Efek love jatuh -->
   <script>
-    function createHeart() {
-      const colors = ["#ff4d4d", "#ff66cc", "#ffcc00", "#66ff66", "#66ccff", "#9966ff"];
-      const heart = document.createElement("div");
-      heart.className = "heart";
-      heart.style.left = Math.random() * 100 + "vw";
-      heart.style.animationDuration = (Math.random() * 2 + 3) + "s";
-      heart.style.color = colors[Math.floor(Math.random() * colors.length)];
-      heart.innerText = "❤";
-      document.body.appendChild(heart);
-      setTimeout(() => heart.remove(), 5000);
-    }
-    setInterval(createHeart, 300);
-  </script>
+  function createHeart() {
+    const colors = ["#ff4d4d", "#ff66cc", "#ffcc00", "#66ff66", "#66ccff", "#9966ff"];
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.animationDuration = (Math.random() * 2 + 3) + "s";
+    heart.style.color = colors[Math.floor(Math.random() * colors.length)];
+    heart.innerText = "❤";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 5000);
+  }
+
+  setInterval(createHeart, 300);
+</script>
 
   <!-- Slideshow JS -->
   <script>
