@@ -97,7 +97,7 @@
   .heart {
   position: fixed;
   top: -50px;
-  font-size: 24px;
+  font-size: 36px;
   color: pink;
   animation: fall linear infinite;
   z-index: 9999;
@@ -192,6 +192,7 @@ Aku sungguh menyayangimu. Dan aku minta maaf.
     heart.style.left = Math.random() * window.innerWidth + "px";
     heart.style.animationDuration = (Math.random() * 2 + 3) + "s";
     heart.style.color = colors[Math.floor(Math.random() * colors.length)];
+    heart.style.fontSize = (Math.random() * 20 + 24) + "px";
     heart.innerText = "❤";
     document.body.appendChild(heart);
     setTimeout(() => heart.remove(), 5000);
