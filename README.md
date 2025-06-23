@@ -18,6 +18,9 @@
       color: white;
       padding: 30px 20px;
       text-align: center;
+      max-width: 800px;       
+      margin: 20px auto;      
+      border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       border-bottom: 2px solid rgba(255, 255, 255, 0.2);
       backdrop-filter: blur(4px);
