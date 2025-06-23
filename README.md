@@ -102,7 +102,7 @@
 </audio>
 
 
-  <header>
+  <header style="text-align: center;>
     <h1>Selamat Ulang Tahun ke-18 <span class="love">Sita Camelia Azzahra</span> 🎉</h1>
   </header>
 
