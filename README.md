@@ -13,12 +13,17 @@
       overflow-x: hidden;
     }
 
-    header {
-      background-color: #4682B4;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+header {
+  background: linear-gradient(135deg, #6a9ff8, #a68df5);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  position: relative;
+  z-index: 10;
+}
 
     .love {
       color: #ff69b4;
@@ -102,7 +107,7 @@
 </audio>
 
 
-  <header style="text-align: center;>
+  <header>
     <h1>Selamat Ulang Tahun ke-18 <span class="love">Sita Camelia Azzahra</span> 🎉</h1>
   </header>
 
