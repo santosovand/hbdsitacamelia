@@ -158,7 +158,7 @@ Aku sungguh menyayangimu. Dan aku minta maaf.
       <strong>Van Danu</strong>
     </p>
 
-    <h2 style="text-align:center;">📸 Kenangan Manis Kita</h2>
+    <h2 style="text-align:center;">📸♥️🫶🏻 Kenangan Manis Kita</h2>
   <div class="slideshow">
       <img class="slide active" src="foto8.jpg" alt="Foto 8" />
       <img class="slide" src="foto5.jpg" alt="Foto 5" />
